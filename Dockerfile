@@ -37,5 +37,6 @@ RUN R -e "install.packages('httr', repos='https://cran.rstudio.com/')" && \
     R -e "install.packages('tidyverse', repos='https://cran.rstudio.com/')";     
 ##    
 RUN R -e "install.packages('Riex', repos='https://cran.rstudio.com/')";
-## R -e "remotes::install_github('schardtbc/iexcloudR')" && \
+
+RUN R -e "remotes::install_github('schardtbc/iexcloudR')";
 ##  
